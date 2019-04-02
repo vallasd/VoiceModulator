@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="HGTableHeader" customModule="HuckleberryGen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQw-Cn-mnS">
+                    <rect key="frame" x="-83" y="-116" width="191" height="0.0"/>
+                    <animations/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="U31-db-vA7">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="a9D-0I-811">
+                    <rect key="frame" x="2" y="2" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="a9D-0I-811" secondAttribute="height" multiplier="1:1" id="st2-4C-wpm"/>
+                    </constraints>
+                    <animations/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSAddTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="EVM-MG-TPs">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="pressedAdd:" target="c22-O7-iKe" id="Rno-x3-D4o"/>
+                    </connections>
+                </button>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tTX-1D-C84">
+                    <rect key="frame" x="60" y="16" width="360" height="22"/>
+                    <animations/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="sUJ-NZ-6Qj">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                </searchField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tTX-1D-C84" firstAttribute="centerY" secondItem="a9D-0I-811" secondAttribute="centerY" id="2Ea-Nm-ZvL"/>
+                <constraint firstAttribute="trailing" secondItem="tTX-1D-C84" secondAttribute="trailing" constant="20" symbolic="YES" id="J4E-8q-bwe"/>
+                <constraint firstItem="tTX-1D-C84" firstAttribute="leading" secondItem="a9D-0I-811" secondAttribute="trailing" constant="8" symbolic="YES" id="MZG-Ml-YeF"/>
+                <constraint firstItem="a9D-0I-811" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="2" id="QWf-nO-Pnh"/>
+                <constraint firstAttribute="bottom" secondItem="a9D-0I-811" secondAttribute="bottom" constant="2" id="hTI-Wc-uaS"/>
+                <constraint firstItem="a9D-0I-811" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="2" id="meL-gV-7sV"/>
+            </constraints>
+            <animations/>
+            <point key="canvasLocation" x="469" y="352"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
+</document>

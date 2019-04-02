@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="ImageCell" id="Aec-uQ-A6R" customClass="HGCell" customModule="HuckleberryGen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="Yig-bs-I1X">
+                    <rect key="frame" x="4" y="4" width="96" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Yig-bs-I1X" secondAttribute="height" multiplier="1:1" id="4up-dW-6cV"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="typeIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xaI-7a-3ck">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKY-1A-O1O">
+                    <rect key="frame" x="60" y="74" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="nlu-Yi-s1K"/>
+                    </constraints>
+                </customView>
+                <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Fl-Xj-LHo">
+                    <rect key="frame" x="0.0" y="74" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="OPp-2G-0hU"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Yig-bs-I1X" firstAttribute="leading" secondItem="Aec-uQ-A6R" secondAttribute="leading" constant="4" id="Cjv-Q3-ggi"/>
+                <constraint firstItem="Yig-bs-I1X" firstAttribute="top" secondItem="Aec-uQ-A6R" secondAttribute="top" constant="4" id="Qd5-Ks-c4D"/>
+                <constraint firstAttribute="bottom" secondItem="Yig-bs-I1X" secondAttribute="bottom" constant="4" id="mM2-9g-SwF"/>
+            </constraints>
+            <connections>
+                <outlet property="image0" destination="Yig-bs-I1X" id="H3o-yC-k9u"/>
+            </connections>
+            <point key="canvasLocation" x="423" y="421"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="typeIcon" width="110" height="110"/>
+    </resources>
+</document>

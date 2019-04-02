@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="FieldCell1" id="K1d-bu-hvi" customClass="HGCell" customModule="HuckleberryGen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sax-bD-Bm3">
+                    <rect key="frame" x="80" y="7" width="81" height="29"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Field 0" id="uSC-Qt-teh">
+                        <font key="font" size="24" name=".HelveticaNeueDeskInterface-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sax-bD-Bm3" firstAttribute="centerX" secondItem="K1d-bu-hvi" secondAttribute="centerX" id="2Qb-sc-iiN"/>
+                <constraint firstItem="sax-bD-Bm3" firstAttribute="centerY" secondItem="K1d-bu-hvi" secondAttribute="centerY" id="BPi-Gi-fax"/>
+            </constraints>
+            <connections>
+                <outlet property="field0" destination="sax-bD-Bm3" id="Cvo-VV-6s4"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="265.5"/>
+        </customView>
+    </objects>
+</document>
